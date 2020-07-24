@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import { navigate } from '@reach/router'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Cancelbutton from './Cancelbutton';
 
@@ -10,7 +9,6 @@ export default props =>{
     const onSubmitHandler = e => {
         e.preventDefault();
         onSubmitProp({name});
-        navigate('/')
     }
     return (
         <div className="row">
